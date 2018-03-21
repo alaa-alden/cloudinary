@@ -87,4 +87,4 @@ app.post('/win',(req,res)=>{
     res.redirect('/')
 
 })
-app.listen(8080, () => console.log("listen from 8080"))
+app.listen(process.env.PORT||8080, () => console.log("listen from 8080"))
